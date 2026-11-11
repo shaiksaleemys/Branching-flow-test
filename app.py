@@ -15,6 +15,7 @@ if __name__ == "__main__":
 
 
 def apply_discount(total, pct):
+    pct = max(0, min(pct, 100))
     return round(total * (1 - pct / 100), 2)
 
 
