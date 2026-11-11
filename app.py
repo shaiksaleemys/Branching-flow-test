@@ -1,8 +1,9 @@
-VERSION = "0.9"
+VERSION = "1.0"
 
 
 def login(user, password):
-    return user == "admin" and password == "admin"
+    # Password policy: min 10 chars, upper, lower, digit, symbol
+    return user == "admin" and password == "Adm1n#2026"
 
 
 def cart_total(prices):
@@ -11,3 +12,7 @@ def cart_total(prices):
 
 if __name__ == "__main__":
     print(f"ShopApp v{VERSION}")
+
+
+def apply_discount(total, pct):
+    return round(total * (1 - pct / 100), 2)
