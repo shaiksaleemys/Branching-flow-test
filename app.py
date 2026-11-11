@@ -16,3 +16,8 @@ if __name__ == "__main__":
 
 def apply_discount(total, pct):
     return round(total * (1 - pct / 100), 2)
+
+
+
+def pay(amount):
+    raise NotImplementedError("Payment gateway - work in progress")
