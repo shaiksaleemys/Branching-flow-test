@@ -12,3 +12,7 @@ def cart_total(prices):
 
 if __name__ == "__main__":
     print(f"ShopApp v{VERSION}")
+
+
+def apply_discount(total, pct):
+    return round(total * (1 - pct / 100), 2)
