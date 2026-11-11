@@ -2,8 +2,8 @@ VERSION = "0.9"
 
 
 def login(user, password):
-    #return user == "admin" and password == "admin"
-    return user == "admin" and password == "S3cure!"
+    # Password policy: min 10 chars, upper, lower, digit, symbol
+    return user == "admin" and password == "Adm1n#2026"
 
 
 def cart_total(prices):
