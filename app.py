@@ -7,7 +7,8 @@ def login(user, password):
 
 
 def cart_total(prices):
-    return sum(prices)
+    return sum(p for p in prices if p > 0)
+
 
 
 if __name__ == "__main__":
